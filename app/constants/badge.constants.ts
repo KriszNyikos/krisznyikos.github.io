@@ -1,18 +1,18 @@
 import { CvSkillCategory, CvSkillsLevel } from '@/types'
 
-export const SkillCategoryVariant = {
-  [CvSkillCategory.FRONTEND]: 'soft',
-  [CvSkillCategory.BACKEND]: 'subtle',
-  [CvSkillCategory.DATABASE]: 'solid',
-  [CvSkillCategory.DEVOPS]: 'soft',
-  [CvSkillCategory.MOBILE]: 'subtle',
-  [CvSkillCategory.DESIGN]: 'solid',
-  [CvSkillCategory.OTHER]: 'soft'
+export const SkillCategoryColor = {
+  [CvSkillCategory.FRONTEND]: 'primary',
+  [CvSkillCategory.BACKEND]: 'secondary',
+  [CvSkillCategory.DATABASE]: 'success',
+  [CvSkillCategory.DEVOPS]: 'info',
+  [CvSkillCategory.MOBILE]: 'warning',
+  [CvSkillCategory.DESIGN]: 'error',
+  [CvSkillCategory.OTHER]: 'neutral'
 } as const satisfies Record<CvSkillCategory, string>
 
-export const SkillLevelVariant = {
-  [CvSkillsLevel.BEGINNER]: 'soft',
-  [CvSkillsLevel.INTERMEDIATE]: 'subtle',
-  [CvSkillsLevel.ADVANCED]: 'solid',
-  [CvSkillsLevel.EXPERT]: 'solid'
+export const SkillLevelColor = {
+  [CvSkillsLevel.BEGINNER]: 'neutral',
+  [CvSkillsLevel.INTERMEDIATE]: 'info',
+  [CvSkillsLevel.ADVANCED]: 'primary',
+  [CvSkillsLevel.EXPERT]: 'success'
 } as const satisfies Record<CvSkillsLevel, string>

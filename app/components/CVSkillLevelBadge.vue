@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CvSkillsLevel } from '@/types'
-import { SkillLevelVariant } from '@/constants'
+import { SkillLevelColor } from '@/constants'
 
 const { level } = defineProps<{
   level: CvSkillsLevel
@@ -8,5 +8,10 @@ const { level } = defineProps<{
 </script>
 
 <template>
-  <UBadge :variant="SkillLevelVariant[level]" />
+  <UBadge
+    :color="SkillLevelColor[level]"
+    variant="soft"
+  >
+    {{ level.toLowerCase() }}
+  </UBadge>
 </template>

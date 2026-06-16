@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CvSkillCategory } from '@/types'
-import { SkillCategoryVariant } from '@/constants'
+import { SkillCategoryColor } from '@/constants'
 
 const { category } = defineProps<{
   category: CvSkillCategory
@@ -8,5 +8,10 @@ const { category } = defineProps<{
 </script>
 
 <template>
-  <UBadge :variant="SkillCategoryVariant[category]" />
+  <UBadge
+    :color="SkillCategoryColor[category]"
+    variant="soft"
+  >
+    {{ category.toLowerCase() }}
+  </UBadge>
 </template>
