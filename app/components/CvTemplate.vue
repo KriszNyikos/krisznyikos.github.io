@@ -10,6 +10,7 @@ const { content } = defineProps<{ content: CvContent }>()
 
     <section class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-5 items-start">
       <aside class="flex flex-col gap-4">
+        <CvImage />
         <CvAbout :about="content.about" />
         <CvSkills :skills="content.skills" />
         <CvLanguages :languages="content.languages" />
