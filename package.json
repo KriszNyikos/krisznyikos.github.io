@@ -6,6 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "preview": "nuxt preview",
+    "test": "vitest",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "typecheck": "nuxt typecheck"
@@ -22,6 +23,8 @@
     "eslint": "^10.5.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.5"
+  ,
+    "vitest": "^0.34.1"
   },
   "packageManager": "pnpm@11.6.0"
 }
