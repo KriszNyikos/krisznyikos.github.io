@@ -19,10 +19,10 @@ const mappedSkills = mapSkillsToCategories(skills)
       :key="categoryIndex"
       class="flex flex-col gap-2 justify-between items-start"
     >
-      <div class="font-bold">
+      <div class="font-bold text-sm">
         {{ category }}
       </div>
-      <ul class="list-none list-inside flex flex-col gap-1 w-full">
+      <ul class="list-none list-inside text-sm flex flex-col gap-1 w-full">
         <li
           v-for="(skill, skillIndex) in items"
           :key="skillIndex"
