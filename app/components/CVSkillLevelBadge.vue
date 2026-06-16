@@ -10,7 +10,8 @@ const { level } = defineProps<{
 <template>
   <UBadge
     :color="SkillLevelColor[level]"
-    variant="soft"
+    variant="subtle"
+    size="sm"
   >
     {{ level.toLowerCase() }}
   </UBadge>

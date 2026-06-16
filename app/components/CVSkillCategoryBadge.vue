@@ -10,7 +10,9 @@ const { category } = defineProps<{
 <template>
   <UBadge
     :color="SkillCategoryColor[category]"
-    variant="soft"
+    variant="subtle"
+    size="sm"
+    rounded="sm"
   >
     {{ category.toLowerCase() }}
   </UBadge>
