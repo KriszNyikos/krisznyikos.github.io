@@ -21,10 +21,10 @@
   "devDependencies": {
     "@nuxt/eslint": "^1.16.0",
     "eslint": "^10.5.0",
+    "puppeteer": "^25.1.0",
     "typescript": "^6.0.3",
+    "vitest": "^0.34.1",
     "vue-tsc": "^3.3.5"
-  ,
-    "vitest": "^0.34.1"
   },
   "packageManager": "pnpm@11.6.0"
 }
