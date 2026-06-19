@@ -55,6 +55,7 @@ jobs:
         run: node scripts/generate-pdf.js
         env:
           CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+          PDF_FILENAME_PREFIX: ${{ vars.PDF_FILENAME_PREFIX }}
           PDF_OUTPUT_DIR: ${{ vars.PDF_OUTPUT_DIR }}
 
       - name: Upload Pages artifact
