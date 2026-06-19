@@ -12,7 +12,10 @@ const { experience } = defineProps<{
     <h2 class="text-md font-bold mb-2">
       {{ title }}
     </h2>
-    <UCard class="drop-shadow-xl print:drop-shadow-none" v-if="Array.isArray(experience)">
+    <UCard
+      v-if="Array.isArray(experience)"
+      class="drop-shadow-xl print:drop-shadow-none"
+    >
       <article
         v-for="(job, idx) in experience"
         :key="idx"

@@ -12,7 +12,10 @@ const { education } = defineProps<{
     <h2 class="text-md font-bold mb-2">
       {{ title }}
     </h2>
-    <UCard class="drop-shadow-xl print:drop-shadow-none" v-if="Array.isArray(education)">
+    <UCard
+      v-if="Array.isArray(education)"
+      class="drop-shadow-xl print:drop-shadow-none"
+    >
       <div
         v-for="(edu, idx) in education"
         :key="idx"
