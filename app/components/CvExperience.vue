@@ -18,8 +18,8 @@ const { experience } = defineProps<{
         :key="idx"
         class="mb-4"
       >
-        <h3 class="text-sm font-bold">
-          {{ job.position }} — <span class="font-medium text-muted">{{ job.company }}</span>
+        <h3 class="flex flex-col lg:flex-row gap-2 text-sm font-bold">
+          <span>{{ job.position }}</span>  <span class="font-medium text-muted">{{ job.company }}</span>
         </h3>
         <div class="text-sm text-muted">
           {{ job.startDate }} — {{ job.endDate }}
@@ -31,7 +31,7 @@ const { experience } = defineProps<{
           v-if="job.technologies && job.technologies.length"
           class="text-sm text-muted"
         >
-          <div class="flex gap-2">
+          <div class="flex gap-2 flex-wrap">
             <UBadge
               v-for="(tech, index) in job.technologies"
               :key="index"
