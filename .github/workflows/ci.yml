@@ -41,6 +41,8 @@ jobs:
 
       - name: Build
         run: pnpm run generate
+        env:
+          PDF_FILENAME_PREFIX: ${{ vars.PDF_FILENAME_PREFIX }}
 
       - name: Install Chrome
         uses: browser-actions/setup-chrome@v1
