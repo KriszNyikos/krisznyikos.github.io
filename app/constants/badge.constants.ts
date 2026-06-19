@@ -1,14 +1,4 @@
-import { CvSkillCategory, CvSkillsLevel } from '@/types'
-
-export const SkillCategoryColor = {
-  [CvSkillCategory.FRONTEND]: 'primary',
-  [CvSkillCategory.BACKEND]: 'secondary',
-  [CvSkillCategory.DATABASE]: 'success',
-  [CvSkillCategory.DEVOPS]: 'info',
-  [CvSkillCategory.MOBILE]: 'warning',
-  [CvSkillCategory.DESIGN]: 'error',
-  [CvSkillCategory.OTHER]: 'neutral'
-} as const satisfies Record<CvSkillCategory, string>
+import { CvSkillsLevel } from '@/types'
 
 export const SkillLevelColor = {
   [CvSkillsLevel.BEGINNER]: 'neutral',
