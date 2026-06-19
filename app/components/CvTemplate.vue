@@ -9,39 +9,33 @@ const { isHu } = isHuRoute()
 
 <template>
   <div class="max-w-[1100px] mx-auto p-4">
-    <CvHeader :title="content.familyName + ' ' + content.givenName" />
+    <CvHeader
+      :name="content.familyName + ' ' + content.givenName"
+      :job-title="content.jobTitle"
+      :contact="content.contact"
+    />
+    <CvAbout
 
-    <section class="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-5 items-start mt-6">
-      <aside class="flex flex-col gap-4">
-        <CvImage />
-        <CvAbout
-          :title="isHu ? TitleTranslations.hu.about : TitleTranslations.en.about"
-          :about="content.about"
-        />
-        <CvSkills
-          :skills="content.skills"
-          :title="isHu ? TitleTranslations.hu.skills : TitleTranslations.en.skills"
-        />
-        <CvLanguages
-          :title="isHu ? TitleTranslations.hu.languages : TitleTranslations.en.languages"
-          :languages="content.languages"
-        />
-      </aside>
+      :about="content.about"
+      :contact="content.contact"
+      class="mt-4"
+    />
+    <CvSkills
+      :skills="content.skills"
+      :title="isHu ? TitleTranslations.hu.skills : TitleTranslations.en.skills"
+      class="mt-4"
+    />
 
-      <main class="flex flex-col gap-4">
-        <CvContact
-          :title="isHu ? TitleTranslations.hu.contact : TitleTranslations.en.contact"
-          :contact="content.contact"
-        />
-        <CvExperience
-          :title="isHu ? TitleTranslations.hu.experience : TitleTranslations.en.experience"
-          :experience="content.experience"
-        />
-        <CvEducation
-          :title="isHu ? TitleTranslations.hu.education : TitleTranslations.en.education"
-          :education="content.education"
-        />
-      </main>
-    </section>
+    <CvExperience
+      :title="isHu ? TitleTranslations.hu.experience : TitleTranslations.en.experience"
+      :experience="content.experience"
+      class="mt-4"
+    />
+    <div class="mt-4 page-break-print">
+      <CvEducation
+        :title="isHu ? TitleTranslations.hu.education : TitleTranslations.en.education"
+        :education="content.education"
+      />
+    </div>
   </div>
 </template>
