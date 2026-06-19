@@ -1,8 +1,9 @@
-import puppeteer from 'puppeteer';
+import 'dotenv/config'
+import puppeteer from 'puppeteer-core'
 
 (async () => {
   const browser = await puppeteer.launch({
-    headless: true,
+    executablePath: process.env.CHROME_PATH || (process.platform === 'win32' ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' : '/usr/bin/google-chrome-stable'),
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   })
 
@@ -13,9 +14,9 @@ import puppeteer from 'puppeteer';
     await page.emulateMediaType('print')
 
     const host = process.env.PDF_HOST ?? 'http://localhost:3000'
-    const routes = process.env.PDF_ROUTES ? process.env.PDF_ROUTES.split(',') : ['/', '/hu']
+    const routes = process.env.PDF_ROUTES ? process.env.PDF_ROUTES.split(',').map(r => r.trim()) : ['/', '/hu']
     const outputDir = process.env.PDF_OUTPUT_DIR ?? 'public'
-    const filenamePrefix = process.env.PDF_FILENAME_PREFIX ?? 'cv_krisztian_nyikos'
+    const filenamePrefix = process.env.PDF_FILENAME_PREFIX
     const year = new Date().toISOString().slice(0, 4)
     for (const route of routes) {
       await page.goto(`${host}${route}`, { waitUntil: 'networkidle2', timeout: 60000 })
