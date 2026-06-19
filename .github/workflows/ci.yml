@@ -52,6 +52,10 @@ jobs:
       - name: Wait for server
         run: sleep 3
 
+      - name: Clean old PDFs
+        run: rm -f ${{ vars.PDF_OUTPUT_DIR }}/*.pdf
+        shell: bash
+
       - name: Generate PDFs
         run: node scripts/generate-pdf.js
         env:
