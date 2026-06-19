@@ -12,6 +12,7 @@ permissions:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    environment: github-pages
 
     steps:
       - name: Checkout
@@ -50,13 +51,6 @@ jobs:
 
       - name: Wait for server
         run: sleep 3
-
-      - name: Debug PDF variables
-        run: |
-          echo "CHROME_PATH=${{ steps.setup-chrome.outputs.chrome-path }}"
-          echo "PDF_FILENAME_PREFIX=${{ vars.PDF_FILENAME_PREFIX }}"
-          echo "PDF_OUTPUT_DIR=${{ vars.PDF_OUTPUT_DIR }}"
-        shell: bash
 
       - name: Generate PDFs
         run: node scripts/generate-pdf.js
