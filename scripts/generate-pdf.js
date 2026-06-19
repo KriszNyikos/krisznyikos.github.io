@@ -16,7 +16,7 @@ import puppeteer from 'puppeteer-core'
     const host = process.env.PDF_HOST ?? 'http://localhost:3000'
     const routes = process.env.PDF_ROUTES ? process.env.PDF_ROUTES.split(',').map(r => r.trim()) : ['/', '/hu']
     const outputDir = process.env.PDF_OUTPUT_DIR ?? 'public'
-    const filenamePrefix = process.env.PDF_FILENAME_PREFIX
+    const filenamePrefix = process.env.PDF_FILENAME_PREFIX ?? 'cv'
     for (const route of routes) {
       await page.goto(`${host}${route}`, { waitUntil: 'networkidle2', timeout: 60000 })
       await page.waitForSelector('#__nuxt', { timeout: 10000 })
