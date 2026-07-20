@@ -101,7 +101,7 @@
     {
       "company": "Black Cell Hungary Zrt.",
       "position": "Fullstack Engineer",
-      "description": "Designed and built an internal cybersecurity dashboard from the ground up as a solo full-stack developer. Owned the full lifecycle architecture decisions, feature development, infrastructure, and deployment. Actively used GitHub Copilot (agent mode) to accelerate development.",
+      "description": "Designed and built an internal cybersecurity dashboard from scratch as a solo full-stack developer. I was responsible for the full lifecycle of the project, from architectural decisions and feature development to infrastructure setup and deployment. I used GitHub Copilot Agent Mode daily to accelerate the development process.",
       "startDate": "2025-01",
       "endDate": "2026-06",
       "technologies": [
@@ -116,36 +116,43 @@
     {
       "company": "NIX Tech Kft.",
       "position": "Medior Angular Developer",
-      "description": "Worked on an American Payroll & Finance platform. Converted features from legacy AngularJS codebase to Angular 17. Mentoring junior developers and participating in technical interviews.",
+      "description": "Worked on an American payroll and finance platform. Migrated and rewrote features from a legacy AngularJS application to Angular 17. Mentored junior developers and participated in technical interviews.",
       "startDate": "2023-08",
       "endDate": "2025-01",
       "technologies": [
         "Angular",
         "AngularJS",
+        "Git",
         "TypeScript"
-      ]
-    },
-    {
-      "company": "Supercharge Kft.",
-      "position": "JavaScript Developer",
-      "description": "Worked on an international project from the first line of code in Angular. Built and documented new components using Storybook.",
-      "startDate": "2022-11",
-      "endDate": "2023-08",
-      "technologies": [
-        "Angular",
-        "JavaScript",
-        "Storybook"
       ]
     },
     {
       "company": "EPAM Systems Kft.",
       "position": "Software Engineer",
-      "description": "Collaborated with senior Angular developers on enterprise-grade applications. Bug fixing and feature development in Angular.",
+      "description": "Collaborated with senior Angular developers on enterprise applications and took part in developing an international Angular project from its very first line of code.",
       "startDate": "2021-12",
-      "endDate": "2022-11",
+      "endDate": "2023-11",
       "technologies": [
         "Angular",
-        "JavaScript"
+        "Storybook",
+        "TypeScript",
+        "RxJS",
+        "Leaflet",
+        "Git"
+      ]
+    },
+    {
+      "company": "Cyber Intel Matrix",
+      "position": "Junior Frontend Developer",
+      "description": "Built a cybersecurity dashboard from scratch as a junior developer. Visualized security events and metrics in an interactive interface.",
+      "startDate": "2020-11",
+      "endDate": "2021-12",
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "RxJS",
+        "ECharts",
+        "Git"
       ]
     }
   ],
