@@ -75,6 +75,11 @@
       "level": "Advanced"
     },
     {
+      "name": "Storybook",
+      "category": "Tools",
+      "level": "Intermediate"
+    },
+    {
       "name": "Git / GitHub / GitLab",
       "category": "Tools",
       "level": "Expert"
@@ -105,25 +110,32 @@
       "startDate": "2025-01",
       "endDate": "2026-06",
       "technologies": [
-        "JavaScript",
+        "Vue 3",
+        "Pinia",
         "TypeScript",
+        "Tailwind CSS",
+        "GitLab CI/CD",
         "Python",
         "FastAPI",
         "Docker",
-        "GitHub Copilot"
+        "GitHub Copilot",
+        "Redis"
       ]
     },
     {
       "company": "NIX Tech Kft.",
       "position": "Medior Angular Developer",
-      "description": "Amerikai payroll és pénzügyi platform fejlesztése. Örökölt AngularJS alkalmazás funkcióinak migrálása és újraírása Angular 17-re. Junior fejlesztők mentorálása, valamint részvétel technikai interjúk lebonyolításában.",
+      "description": "Amerikai payroll és pénzügyi platform fejlesztése. Funkciókat migráltam és írtam át egy elavult AngularJS alkalmazásból Angular 17-re, a folyamat során breaking change-eket és függőség-kompatibilitási problémákat oldva meg. Junior fejlesztőket mentoráltam, és technikai interjúkon vettem részt.",
       "startDate": "2023-11",
       "endDate": "2025-01",
       "technologies": [
-        "Angular",
+        "Angular 17",
         "AngularJS",
         "Git",
-        "TypeScript"
+        "TypeScript",
+        "RxJS",
+        "NgRx",
+        "SCSS"
       ]
     },
     {
@@ -133,7 +145,7 @@
       "startDate": "2021-12",
       "endDate": "2023-11",
       "technologies": [
-        "Angular",
+        "Angular 13",
         "Storybook",
         "TypeScript",
         "RxJS",

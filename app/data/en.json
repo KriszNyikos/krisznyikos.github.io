@@ -75,6 +75,11 @@
       "level": "Advanced"
     },
     {
+      "name": "Storybook",
+      "category": "Tools",
+      "level": "Intermediate"
+    },
+    {
       "name": "Git / GitHub / GitLab",
       "category": "Tools",
       "level": "Expert"
@@ -89,6 +94,7 @@
       "category": "Language",
       "level": "B2 - Upper Intermediate"
     }
+
   ],
   "contact": {
     "email": "krisz.nyikos@gmail.com",
@@ -105,25 +111,32 @@
       "startDate": "2025-01",
       "endDate": "2026-06",
       "technologies": [
-        "JavaScript",
+        "Vue 3",
+        "Pinia",
         "TypeScript",
+        "Tailwind CSS",
+        "GitLab CI/CD",
         "Python",
         "FastAPI",
         "Docker",
-        "GitHub Copilot"
+        "GitHub Copilot",
+        "Redis"
       ]
     },
     {
       "company": "NIX Tech Kft.",
       "position": "Medior Angular Developer",
-      "description": "Worked on an American payroll and finance platform. Migrated and rewrote features from a legacy AngularJS application to Angular 17. Mentored junior developers and participated in technical interviews.",
+      "description": "Worked on an American payroll and finance platform. Migrated and rewrote features from a legacy AngularJS application to Angular 17, resolving breaking changes and dependency-compatibility issues along the way. Mentored junior developers and participated in technical interviews.",
       "startDate": "2023-11",
       "endDate": "2025-01",
       "technologies": [
-        "Angular",
+        "Angular 17",
         "AngularJS",
         "Git",
-        "TypeScript"
+        "TypeScript",
+        "RxJS",
+        "NgRx",
+        "SCSS"
       ]
     },
     {
@@ -148,7 +161,7 @@
       "startDate": "2020-11",
       "endDate": "2021-12",
       "technologies": [
-        "Angular",
+        "Angular 13",
         "TypeScript",
         "RxJS",
         "ECharts",
