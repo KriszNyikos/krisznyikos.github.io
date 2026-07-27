@@ -10,14 +10,29 @@
       "level": "Expert"
     },
     {
-      "name": "Vue 3 / Pinia",
+      "name": "Vue 3",
       "category": "Frontend",
       "level": "Advanced"
     },
     {
-      "name": "Angular (v16+) / Angular Material",
+      "name": "Pinia",
+      "category": "Frontend",
+      "level": "Advanced"
+    },
+    {
+      "name": "Vite",
+      "category": "Frontend",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Angular (v16+)",
       "category": "Frontend",
       "level": "Expert"
+    },
+    {
+      "name": "SCSS",
+      "category": "Frontend",
+      "level": "Intermediate"
     },
     {
       "name": "Tailwind CSS",
@@ -25,27 +40,27 @@
       "level": "Advanced"
     },
     {
-      "name": "SCSS",
-      "category": "Frontend",
-      "level": "Advanced"
-    },
-    {
-      "name": "Node.js / Express",
-      "category": "Backend",
-      "level": "Intermediate"
-    },
-    {
-      "name": "Python / FastAPI",
-      "category": "Backend",
-      "level": "Intermediate"
-    },
-    {
       "name": "REST API",
       "category": "Backend",
       "level": "Advanced"
     },
     {
-      "name": "Docker / Docker Compose",
+      "name": "Node.js",
+      "category": "Backend",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Python",
+      "category": "Backend",
+      "level": "Intermediate"
+    },
+    {
+      "name": "FastAPI",
+      "category": "Backend",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Docker",
       "category": "DevOps",
       "level": "Intermediate"
     },
@@ -80,12 +95,12 @@
       "level": "Intermediate"
     },
     {
-      "name": "Git / GitHub / GitLab",
+      "name": "Git",
       "category": "Tools",
       "level": "Expert"
     },
     {
-      "name": "GitHub Copilot (agent mode)",
+      "name": "GitHub Copilot",
       "category": "Tools",
       "level": "Advanced"
     },
