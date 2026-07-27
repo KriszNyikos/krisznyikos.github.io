@@ -20,11 +20,6 @@
       "level": "Expert"
     },
     {
-      "name": "React",
-      "category": "Frontend",
-      "level": "Beginner"
-    },
-    {
       "name": "Tailwind CSS / Bootstrap",
       "category": "Frontend",
       "level": "Advanced"
