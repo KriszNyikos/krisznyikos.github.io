@@ -20,7 +20,12 @@
       "level": "Expert"
     },
     {
-      "name": "Tailwind CSS / Bootstrap",
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "level": "Advanced"
+    },
+    {
+      "name": "SCSS",
       "category": "Frontend",
       "level": "Advanced"
     },
